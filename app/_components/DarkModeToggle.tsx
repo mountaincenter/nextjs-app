@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() =>
-    document.documentElement.classList.contains("dark"),
-  );
+  const [darkMode, setDarkMode] = useState(false);
+
+  // クライアントサイドでのみ実行される useEffect
+  useEffect(() => {
+    setDarkMode(document.documentElement.classList.contains("dark"));
+  }, []);
 
   useEffect(() => {
     if (darkMode) {
