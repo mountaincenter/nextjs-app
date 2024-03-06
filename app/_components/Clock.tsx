@@ -15,7 +15,12 @@ const Clock = () => {
   }, []);
 
   return (
-    <p className="text-10xl font-bold text-center text-black dark:text-white">
+    <p
+      className="font-bold text-center text-black dark:text-white
+      text-xl sm:text-3xl md:text-5xl lg:text-8xl xl:text-10xl
+      w-full
+      "
+    >
       {time}
     </p>
   );
