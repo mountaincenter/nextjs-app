@@ -17,7 +17,7 @@ const Clock = () => {
   return (
     <p
       className="font-bold text-center text-black dark:text-white
-      text-xl sm:text-3xl md:text-5xl lg:text-8xl xl:text-10xl
+      text-5xl sm:text-8xl md:text-8xl lg:text-10xl xl:text-10xl
       w-full
       "
     >
