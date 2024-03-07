@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+import Button from "./atoms/Button";
 
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,16 +23,13 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className="absolute top-10 right-5 mx:right-10 lg:right-20 p-2 rounded-full bg-gray-200 dark:bg-gray-600"
-    >
+    <Button onClick={toggleDarkMode} className="inline-block">
       {darkMode ? (
         <SunIcon className="w-6 h-6 text-gray-800 dark:text-gray-200" />
       ) : (
         <MoonIcon className="w-6 h-6 text-gray-800 dark:text-gray-200" />
       )}
-    </button>
+    </Button>
   );
 };
 
