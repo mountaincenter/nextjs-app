@@ -24,7 +24,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="absolute top-10 right-20 p-2 rounded-full bg-gray-200 dark:bg-gray-600"
+      className="absolute top-10 right-5 mx:right-10 lg:right-20 p-2 rounded-full bg-gray-200 dark:bg-gray-600"
     >
       {darkMode ? (
         <SunIcon className="w-6 h-6 text-gray-800 dark:text-gray-200" />
