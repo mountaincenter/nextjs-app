@@ -4,7 +4,7 @@ import Clock from "./_components/Clock";
 import Today from "./_components/Today";
 import DarkModeToggle from "./_components/DarkModeToggle";
 import CalendarLink from "./_components/Calendar";
-import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Home = () => {
   return (
