@@ -15,7 +15,7 @@ const Clock = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <TextAtom size="medium">{time}</TextAtom>;
+  return <TextAtom size="large">{time}</TextAtom>;
 };
 
 export default Clock;

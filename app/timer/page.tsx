@@ -11,7 +11,7 @@ const Timer = () => {
         <HomeLink />
       </div>
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-8 lg:gap-16 lx:gap-20">
-        <TimerComponent expiryTimestamp={time} />
+        <TimerComponent />
       </div>
     </div>
   );
