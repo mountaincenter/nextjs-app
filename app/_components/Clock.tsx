@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TextAtom from "./atoms/Text/TextAtom";
 
 const Clock = () => {
   const [time, setTime] = useState("");
@@ -14,16 +15,7 @@ const Clock = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <p
-      className="font-bold text-center text-black dark:text-white
-      text-5xl sm:text-8xl md:text-8xl lg:text-10xl xl:text-10xl
-      w-full
-      "
-    >
-      {time}
-    </p>
-  );
+  return <TextAtom size="large">{time}</TextAtom>;
 };
 
 export default Clock;

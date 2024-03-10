@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TextAtom from "./atoms/Text/TextAtom";
 
 const Today = () => {
   const [today, setToday] = useState("");
@@ -15,16 +16,7 @@ const Today = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
-  return (
-    <p
-      className="font-bold text-center text-black dark:text-white
-      text-3xl sm:text-5xl md:text-5xl lg:text-8xl xl:text-8xl
-      w-full
-      "
-    >
-      {today}
-    </p>
-  );
+  return <TextAtom size="medium">{today}</TextAtom>;
 };
 
 export default Today;
